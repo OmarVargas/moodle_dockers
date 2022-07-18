@@ -1,0 +1,16 @@
+moodle_image_name="moodle_400:1.0.0"
+mysql_image_name="mysql:8.0.29"
+moodle_name="posgrado"
+moodle_app_container_name=$moodle_name"_app"
+moodle_db_container_name=$moodle_name"_db"
+db_name='moodle'
+db_user='moodle'
+db_password='moodle'
+app_name="Prueba"
+app_user="administrador"
+app_password="administrador"
+moodle_tag="MOODLE_400_STABLE"
+moodle_version="400"
+moodle_direct_link="https://download.moodle.org/download.php/direct/stable"$moodle_version"/moodle-latest-"$moodle_version".tgz"
+moodle_md5_link="https://download.moodle.org/stable"$moodle_version"/moodle-latest-"$moodle_version".tgz.md5"
+
