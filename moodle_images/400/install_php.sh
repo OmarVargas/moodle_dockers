@@ -1,6 +1,6 @@
 
 #!/bin/bash
-php_version=7.4    
+php_version=8.1   
 apt -y install \
 php$(php_version) \
 php$(php_version)-common \
@@ -23,3 +23,4 @@ php$(php_version)-zip \
 php$(php_version)-intl \
 php$(php_version)-exif
 apt-get clean
+echo 'max_input_vars = 5000' >> /etc/php/$php_version/apache2/php.ini
