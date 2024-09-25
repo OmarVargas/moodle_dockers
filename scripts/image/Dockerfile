@@ -1,3 +1,7 @@
+ARG moodle_tag="MOODLE_404_STABLE"
+ARG moodle_version="404"
+ARG php_version="8.1"
+
 FROM ubuntu:22.04
 ARG DEBIAN_FRONTEND=noninteractive
 
