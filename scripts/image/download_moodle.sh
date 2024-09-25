@@ -1,4 +1,6 @@
 #!/bin/bash
+moodle_version=$1
+moodle_tag=$2
 
 moodle_direct_link="https://download.moodle.org/download.php/direct/stable"$moodle_version"/moodle-latest-"$moodle_version".tgz"
 moodle_md5_link="https://download.moodle.org/stable"$moodle_version"/moodle-latest-"$moodle_version".tgz.md5"
