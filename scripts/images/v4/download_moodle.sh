@@ -1,7 +1,7 @@
 #!/bin/bash
 
-moodle_tag="MOODLE_404_STABLE"
-moodle_version="404"
+
+
 moodle_direct_link="https://download.moodle.org/download.php/direct/stable"$moodle_version"/moodle-latest-"$moodle_version".tgz"
 moodle_md5_link="https://download.moodle.org/stable"$moodle_version"/moodle-latest-"$moodle_version".tgz.md5"
 
