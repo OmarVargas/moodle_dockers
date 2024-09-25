@@ -1,5 +1,6 @@
 
-#!/bin/bash  
+#!/bin/bash
+php_version=$1
 apt -y install \
 php$(php_version) \
 php$(php_version)-common \
