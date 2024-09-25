@@ -1,9 +1,5 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 ARG DEBIAN_FRONTEND=noninteractive
-MAINTAINER Omar Ricardo Vargas Cárdenas <omar.vargas.cardenas@gmail.com>
-
-#https://docs.moodle.org/dev/Moodle_4.0_release_notes#Server_requirements
-#https://download.moodle.org/releases/latest/
 
 WORKDIR /var/www/
 
@@ -21,7 +17,7 @@ RUN ./install_tools.sh
 RUN ./install_php.sh
 RUN ./install_apache.sh
 RUN ./download_moodle.sh file
-RUN echo 'max_input_vars = 5000' >> /etc/php/7.4/apache2/php.ini
+RUN echo 'max_input_vars = 5000' >> /etc/php/8.1/apache2/php.ini
 
 ADD info.php ./html/info.php
 RUN chmod +x ./html/info.php
