@@ -6,7 +6,6 @@ WORKDIR /var/www/
 ADD install_tools.sh .
 ADD install_php.sh .
 ADD install_apache.sh .
-ADD install_moodle.sh .
 ADD install_permissions.sh .
 ADD download_moodle.sh .
 
