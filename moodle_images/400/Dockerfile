@@ -17,7 +17,6 @@ RUN ./install_tools.sh
 RUN ./install_php.sh
 RUN ./install_apache.sh
 RUN ./download_moodle.sh file
-RUN echo 'max_input_vars = 5000' >> /etc/php/8.1/apache2/php.ini
 
 ADD info.php ./html/info.php
 RUN chmod +x ./html/info.php
