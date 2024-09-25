@@ -1,6 +1,5 @@
 
-#!/bin/bash
-php_version=8.1   
+#!/bin/bash  
 apt -y install \
 php$(php_version) \
 php$(php_version)-common \
