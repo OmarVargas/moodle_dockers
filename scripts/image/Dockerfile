@@ -13,9 +13,9 @@ RUN chmod +x ./install_*
 RUN chmod +x ./download_moodle.sh
 
 RUN ./install_tools.sh
-RUN ./install_php.sh
+RUN ./install_php.sh ${php_version}
 RUN ./install_apache.sh
-RUN ./download_moodle.sh file
+RUN ./download_moodle.sh file ${moodle_version} ${moodle_tag}
 
 ADD info.php ./html/info.php
 RUN chmod +x ./html/info.php
